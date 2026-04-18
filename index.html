@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Kolte | Full-Stack Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Vishal Kolte — Full-Stack Developer, BE student at Bharati Vidyapeeth College of Engineering, Pune. Skilled in Java, Spring Boot, React, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>VK<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Journey</a></li>
+                <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-image"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting animate-in">Hello, I'm</p>
+                <h1 class="hero-name animate-in">
+                    <span class="name-line">Vishal</span>
+                    <span class="name-line gradient-text">Kolte</span>
+                </h1>
+                <div class="hero-typing-wrapper animate-in">
+                    <span class="typing-prefix">I build </span>
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description animate-in">
+                    Full-Stack Developer & BE Student crafting modern web experiences
+                    with clean code and creative design.
+                </p>
+                <div class="hero-cta animate-in">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+                <div class="hero-stats animate-in">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="6">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="1">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Years Coding</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual animate-in">
+                <div class="profile-card">
+                    <div class="profile-ring"></div>
+                    <img src="profile.png" alt="Vishal Kolte" class="profile-image">
+                    <div class="profile-status">
+                        <span class="status-dot"></span>
+                        Available for work
+                    </div>
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="fab fa-java"></i>
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fab fa-react"></i>
+                </div>
+                <div class="floating-badge badge-3">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="floating-badge badge-4">
+                    <i class="fas fa-database"></i>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">01.</span> About Me
+            </h2>
+            <div class="about-grid">
+                <div class="about-content reveal">
+                    <p class="about-intro">
+                        I'm a passionate <strong>Full-Stack Developer</strong> and Second-year
+                        <strong>BE Computer Engineering</strong> student at
+                        <strong>Bharati Vidyapeeth College of Engineering, Lavale, Pune</strong>.
+                    </p>
+                    <p>
+                        I love turning complex problems into simple, beautiful, and intuitive solutions.
+                        My journey in tech started with curiosity about how websites work, and it has
+                        evolved into a deep passion for building end-to-end applications — from
+                        designing sleek frontends to architecting robust backend systems.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new technologies, contributing
+                        to open-source projects, or diving into system design concepts. I believe in
+                        writing clean, maintainable code and continuously learning.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>Education</strong>
+                                <span>BE in Computer Engineering</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <span>Pune, Maharashtra, India</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <strong>College</strong>
+                                <span>Bharati Vidyapeeth CoE, Lavale</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <strong>Focus</strong>
+                                <span>Full-Stack Web Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image-wrapper reveal">
+                    <div class="about-code-card">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="code-filename">vishal.json</span>
+                        </div>
+                        <pre class="code-body"><code>{
+  <span class="key">"name"</span>: <span class="value">"Vishal Kolte"</span>,
+  <span class="key">"role"</span>: <span class="value">"Full-Stack Developer"</span>,
+  <span class="key">"education"</span>: <span class="value">"BE - Computer Engg"</span>,
+  <span class="key">"college"</span>: <span class="value">"BVCOEL, Pune"</span>,
+  <span class="key">"languages"</span>: [
+    <span class="value">"Java"</span>, <span class="value">"Python"</span>,
+    <span class="value">"JavaScript"</span>, <span class="value">"C++"</span>
+  ],
+  <span class="key">"interests"</span>: [
+    <span class="value">"Web Dev"</span>,
+    <span class="value">"System Design"</span>,
+    <span class="value">"Open Source"</span>
+  ],
+  <span class="key">"available"</span>: <span class="bool">true</span>
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">02.</span> Technology Stack
+            </h2>
+            <p class="section-subtitle reveal">Technologies I work with to bring ideas to life</p>
+
+            <div class="skills-tabs reveal">
+                <button class="skill-tab active" data-tab="frontend">
+                    <i class="fas fa-palette"></i> Frontend
+                </button>
+                <button class="skill-tab" data-tab="backend">
+                    <i class="fas fa-server"></i> Backend
+                </button>
+                <button class="skill-tab" data-tab="database">
+                    <i class="fas fa-database"></i> Database
+                </button>
+                <button class="skill-tab" data-tab="tools">
+                    <i class="fas fa-tools"></i> Tools & Others
+                </button>
+            </div>
+
+            <div class="skills-content">
+                <div class="skill-panel active" id="panel-frontend">
+                    <div class="skill-card" data-level="90">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <h4>HTML5</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 90%"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-card" data-level="85">
+                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                        <h4>CSS3</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 85%"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-card" data-level="80">
+                        <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                        <h4>JavaScript</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 80%"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-card" data-level="75">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                        <h4>React.js</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 75%"></div>
+                        </div>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-card" data-level="70">
+                        <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                        <h4>Data Structure and Algorithm </h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 70%"></div>
+                        </div>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="skill-card" data-level="65">
+                        <div class="skill-icon"><i class="fab fa-css3"></i></div>
+                        <h4>CSS</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 65%"></div>
+                        </div>
+                        <span class="skill-percent">65%</span>
+                    </div>
+                </div>
+
+                <div class="skill-panel" id="panel-backend">
+                    <div class="skill-card" data-level="85">
+                        <div class="skill-icon"><i class="fab fa-java"></i></div>
+                        <h4>Java</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 85%"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-card" data-level="80">
+                        <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+                        <h4>Spring Boot</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 80%"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-card" data-level="75">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <h4>Python</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 75%"></div>
+                        </div>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-card" data-level="70">
+                        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                        <h4>Node.js</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 70%"></div>
+                        </div>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="skill-card" data-level="70">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h4>REST APIs</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 70%"></div>
+                        </div>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="skill-card" data-level="65">
+                        <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                        <h4>C / C++</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 65%"></div>
+                        </div>
+                        <span class="skill-percent">65%</span>
+                    </div>
+                </div>
+
+                <div class="skill-panel" id="panel-database">
+                    <div class="skill-card" data-level="80">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h4>MySQL</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 80%"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-card" data-level="70">
+                        <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+                        <h4>MongoDB</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 70%"></div>
+                        </div>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="skill-card" data-level="65">
+                        <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                        <h4>Firebase</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 65%"></div>
+                        </div>
+                        <span class="skill-percent">65%</span>
+                    </div>
+                </div>
+
+                <div class="skill-panel" id="panel-tools">
+                    <div class="skill-card" data-level="85">
+                        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                        <h4>Git & GitHub</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 85%"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+
+
+                    <div class="skill-card" data-level="70">
+                        <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                        <h4>VS Code</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 70%"></div>
+                        </div>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="skill-card" data-level="60">
+                        <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                        <h4>AWS Basics</h4>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="--progress: 60%"></div>
+                        </div>
+                        <span class="skill-percent">60%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">03.</span> Featured Projects
+            </h2>
+            <p class="section-subtitle reveal">A selection of things I've built</p>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card reveal" id="project-1">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Live"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Full-Stack</span>
+                        <h3 class="project-title">Shiv Parvati Vastre Bhandar</h3>
+                        <p class="project-desc">
+                            A premium e-commerce platform for traditional Indian clothing with Razorpay
+                            payment integration, cart management, and an admin dashboard.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span><span>Spring Boot</span><span>MySQL</span><span>Razorpay</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card reveal" id="project-2">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Live"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-tractor"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Enterprise</span>
+                        <h3 class="project-title">Agri-ERP System</h3>
+                        <p class="project-desc">
+                            A comprehensive Enterprise Resource Planning system for agriculture
+                            businesses with inventory, supplier management, GST reports, and accounting.
+                        </p>
+                        <div class="project-tech">
+                            <span>Next.js</span><span>Prisma</span><span>MongoDB</span><span>TypeScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card reveal" id="project-3">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Live"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">AI / ML</span>
+                        <h3 class="project-title">Smart Attendance System</h3>
+                        <p class="project-desc">
+                            Face recognition-based attendance system using Python and OpenCV
+                            with real-time detection, automated logging, and a web dashboard.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span><span>OpenCV</span><span>Flask</span><span>SQLite</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card reveal" id="project-4">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Live"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="View Code"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web App</span>
+                        <h3 class="project-title">Task Management Dashboard</h3>
+                        <p class="project-desc">
+                            A real-time collaborative task manager with drag-and-drop Kanban boards,
+                            team assignment, notifications, and progress analytics.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span><span>Node.js</span><span>Socket.io</span><span>MongoDB</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Journey Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">04.</span> My Journey
+            </h2>
+            <p class="section-subtitle reveal">Education & milestones along the way</p>
+
+            <div class="timeline">
+                <div class="timeline-item reveal" id="timeline-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024— 2028</span>
+                        <h3>Bachelor of Engineering — Computer Science</h3>
+                        <p class="timeline-org">Bharati Vidyapeeth College of Engineering, Lavale, Pune</p>
+                        <p>Studying core CS subjects including Data Structures, Algorithms,
+                            Operating Systems, DBMS, Computer Networks, and Software Engineering.
+                            Active participant in coding competitions and tech events.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal" id="timeline-2">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024</span>
+                        <h3>Full-Stack Development Projects</h3>
+                        <p class="timeline-org">Self-Learning & Academic Projects</p>
+                        <p>Built multiple end-to-end web applications including an e-commerce
+                            platform and ERP system using React, Spring Boot, Next.js, and various databases.
+                            Learned enterprise-level architecture patterns.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal" id="timeline-3">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023</span>
+                        <h3>Started Open Source Contributions</h3>
+                        <p class="timeline-org">GitHub Community</p>
+                        <p>Began contributing to open-source projects, learning collaborative
+                            development workflows, code review processes, and version control best practices.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal" id="timeline-4">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022</span>
+                        <h3>Began Programming Journey</h3>
+                        <p class="timeline-org">Self-Taught Developer</p>
+                        <p>Started learning C, C++, and Java. Built first simple programs and
+                            websites. Discovered the passion for creating things with code.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Achievements Section -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">05.</span> Certifications & Achievements
+            </h2>
+            <p class="section-subtitle reveal">Professional validations of my technical expertise and milestones</p>
+
+            <div class="gallery-grid">
+                <!-- Certificate 1: Deloitte -->
+                <div class="gallery-item reveal" data-title="Data Analytics Job Simulation" data-issuer="Deloitte">
+                    <img src="certificates/deloitte-analytics.jpg" alt="Deloitte Data Analytics Certificate">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span class="overlay-issuer">Deloitte</span>
+                            <h3 class="overlay-title">Data Analytics</h3>
+                            <div class="overlay-btn">
+                                <i class="fas fa-search-plus"></i>
+                                <span>View Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 2: MongoDB -->
+                <div class="gallery-item reveal" data-title="Monitoring MongoDB with Built-in Tools"
+                    data-issuer="MongoDB">
+                    <img src="certificates/mongodb-monitoring.jpg" alt="MongoDB Certificate">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span class="overlay-issuer">MongoDB</span>
+                            <h3 class="overlay-title">MongoDB Monitoring</h3>
+                            <div class="overlay-btn">
+                                <i class="fas fa-search-plus"></i>
+                                <span>View Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 3: Infosys Python -->
+                <div class="gallery-item reveal" data-title="Basics of Python" data-issuer="Infosys Springboard">
+                    <img src="certificates/infosys-python.jpg" alt="Infosys Python Certificate">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span class="overlay-issuer">Infosys Springboard</span>
+                            <h3 class="overlay-title">Basics of Python</h3>
+                            <div class="overlay-btn">
+                                <i class="fas fa-search-plus"></i>
+                                <span>View Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 4: Infosys NoSQL -->
+                <div class="gallery-item reveal" data-title="Introduction to NoSQL databases"
+                    data-issuer="Infosys Springboard">
+                    <img src="certificates/infosys-nosql.jpg" alt="Infosys NoSQL Certificate">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span class="overlay-issuer">Infosys Springboard</span>
+                            <h3 class="overlay-title">NoSQL Databases</h3>
+                            <div class="overlay-btn">
+                                <i class="fas fa-search-plus"></i>
+                                <span>View Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 5: Google Gen AI -->
+                <div class="gallery-item reveal" data-title="Introduction to Generative AI"
+                    data-issuer="Google Cloud / Simplilearn">
+                    <img src="certificates/google-genai.jpg" alt="Google Generative AI Certificate">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span class="overlay-issuer">Google Cloud</span>
+                            <h3 class="overlay-title">Generative AI</h3>
+                            <div class="overlay-btn">
+                                <i class="fas fa-search-plus"></i>
+                                <span>View Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 6: Accenture -->
+                <div class="gallery-item reveal" data-title="Software Engineering Job Simulation"
+                    data-issuer="Accenture">
+                    <img src="certificates/accenture-software.jpg" alt="Accenture Software Engineering Certificate">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span class="overlay-issuer">Accenture</span>
+                            <h3 class="overlay-title">Software Engineering</h3>
+                            <div class="overlay-btn">
+                                <i class="fas fa-search-plus"></i>
+                                <span>View Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 7: LinkedIn Learning -->
+                <div class="gallery-item reveal" data-title="Cybersecurity Awareness" data-issuer="LinkedIn Learning">
+                    <img src="certificates/linkedin-cyber.jpg" alt="LinkedIn Cybersecurity Certificate">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span class="overlay-issuer">LinkedIn Learning</span>
+                            <h3 class="overlay-title">Cybersecurity Aware</h3>
+                            <div class="overlay-btn">
+                                <i class="fas fa-search-plus"></i>
+                                <span>View Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 8: Edureka -->
+                <div class="gallery-item reveal" data-title="AWS Beginner Certification" data-issuer="Edureka">
+                    <img src="certificates/edureka-aws.jpg" alt="Edureka AWS Certificate">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span class="overlay-issuer">Edureka</span>
+                            <h3 class="overlay-title">AWS Beginner</h3>
+                            <div class="overlay-btn">
+                                <i class="fas fa-search-plus"></i>
+                                <span>View Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 9: Infosys Agile -->
+                <div class="gallery-item reveal" data-title="Agile Scrum in Practice" data-issuer="Infosys Springboard">
+                    <img src="certificates/infosys-agile.jpg" alt="Infosys Agile Certificate">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <span class="overlay-issuer">Infosys Springboard</span>
+                            <h3 class="overlay-title">Agile Scrum</h3>
+                            <div class="overlay-btn">
+                                <i class="fas fa-search-plus"></i>
+                                <span>View Certificate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">06.</span> Get In Touch
+            </h2>
+            <p class="section-subtitle reveal">
+                Have a project in mind or just want to say hello? I'd love to hear from you!
+            </p>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:koltevishal45@gmail.com">koltevishal45@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+919699146326">+91 96991 46326</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <span>Pune, Maharashtra, India</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/koltevisha" class="social-link" title="GitHub" id="social-github"><i
+                                class="fab fa-github"></i></a>
+                        <a href="www.linkedin.com/in/vishal-kolte-a58823274" class="social-link" title="LinkedIn"
+                            id="social-linkedin"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required placeholder=" ">
+                        <label for="subject">Subject</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#home" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>VK<span class="logo-bracket"> </span>
+                </a>
+                <p class="footer-text">Designed & Built by <strong>Vishal Kolte</strong></p>
+                <p class="footer-copyright">&copy; 2026 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="modal" id="certModal">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <div class="modal-content">
+            <img id="modalImg" src="" alt="Full Certificate">
+            <div class="modal-caption">
+                <h3 id="modalTitle"></h3>
+                <p id="modalIssuer"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
