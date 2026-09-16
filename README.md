@@ -63,7 +63,7 @@ git clone https://github.com/koltevisha/Portfolio.git
 
 ## 📬 Contact Me
 
-* 📧 Email: [your-email@example.com](mailto:koltevishal45@gmail.com)
+* 📧 Email: [koltevishal45@gmail.com](mailto:koltevishal45@gmail.com)
 * 💼 LinkedIn: www.linkedin.com/in/vishal-kolte-a58823274
 * 🐙 GitHub: https://github.com/koltevisha
 
